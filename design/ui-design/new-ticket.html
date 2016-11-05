@@ -1,0 +1,104 @@
+<!doctype html><html>
+<head>
+<title></title>
+<style>
+html {
+	font-family: Arial;
+}
+body {
+	margin: 0;
+}
+nav > ul {
+	list-style: none;
+	padding: 2px 0;
+	background-color: navy;
+	color: white;
+	margin: 0;
+}
+nav > ul > li {
+	display: inline-block;
+	margin-left: 20px;
+}
+nav > ul > li > a {
+	text-decoration: none;
+	color: white;
+}
+nav {
+}
+main {
+	padding: 10px;
+}
+form > input, form > textarea, form > select {
+	display: block;
+	width: 200px;
+	margin-bottom: 10px;
+}
+input[type~=submit] {
+	background-color: navy;
+	border: 0;
+	border-radius: 3px;
+	color: white;
+}
+table > tbody > tr > th {
+	background-color: navy;
+	color: white;
+}
+table > tbody > tr > td {
+	padding-left: 15px;
+	padding-top: 3px;
+}
+table > tbody > tr > td > a {
+	text-decoration: none;
+	display: inline-block;
+	padding-right: 20px;
+}
+table > tbody > tr > td > a:last-of-type {
+	padding-right: 0px;
+}
+table {
+	background-color: #ffd;
+}
+</style>
+</head>
+<body>
+
+<header>
+	<nav>
+		<ul>
+			<li><a href="new-ticket.html">Submit New Ticket</a></li>
+			<li><a href="list-tickets.html">View Past Tickets</a></li>
+			<li><a href="kb.html">Knowledge Base</a></li>
+		</ul>
+	</nav>
+</header>
+
+<main>
+	<h1>Submit New Ticket</h1>
+
+	<!--
+	Known Issues:
+	Safari doesn't support the required attribute
+	-->
+	<form method="post" action="">
+		<select name="dept">
+			<option>--Select Department--</option>
+			<option>Information & Communication Technologies</option>
+		</select>
+
+		<input type="text" name="subject" placeholder="Subject" required="required" />
+		
+		<input type="text" name="location" placeholder="Location" />
+
+		<textarea name="description" placeholder="Description" rows="8"></textarea>
+
+		<input type="email" name="email" placeholder="Email" required="required" />
+
+		<input type="submit" value="Submit" />
+	</form>
+</main>
+
+<footer>
+</footer>
+
+</body>
+</html>

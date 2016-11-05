@@ -1,0 +1,113 @@
+<!doctype html><html>
+<head>
+<title></title>
+<style>
+html {
+	font-family: Arial;
+}
+body {
+	margin: 0;
+}
+nav > ul {
+	list-style: none;
+	padding: 2px 0;
+	background-color: navy;
+	color: white;
+	margin: 0;
+}
+nav > ul > li {
+	display: inline-block;
+	margin-left: 20px;
+}
+nav > ul > li > a {
+	text-decoration: none;
+	color: white;
+}
+nav {
+}
+main {
+	padding: 10px;
+}
+form > input, form > textarea, form > select {
+	display: block;
+	width: 200px;
+	margin-bottom: 10px;
+}
+input[type~=submit] {
+	background-color: navy;
+	border: 0;
+	border-radius: 3px;
+	color: white;
+}
+table > tbody > tr > th {
+	background-color: navy;
+	color: white;
+}
+table > tbody > tr > td {
+	padding-left: 15px;
+	padding-top: 3px;
+}
+table > tbody > tr > td > a {
+	text-decoration: none;
+	display: inline-block;
+	padding-right: 20px;
+}
+table > tbody > tr > td > a:last-of-type {
+	padding-right: 0px;
+}
+table {
+	background-color: #ffd;
+}
+div.field-display {
+	margin-bottom: 15px;
+}
+div.field-display > span {
+	font-weight: bold;
+	display: inline-block;
+	width: 140px;
+}
+</style>
+</head>
+<body>
+
+<header>
+	<nav>
+		<ul>
+			<li><a href="new-ticket.html">Submit New Ticket</a></li>
+			<li><a href="list-tickets.html">View Past Tickets</a></li>
+			<li><a href="kb.html">Knowledge Base</a></li>
+		</ul>
+	</nav>
+</header>
+
+<main>
+	<h1>Open Ticket</h1>
+
+	<div>
+		<div class="field-display">
+			<span>Department</span>
+			IT
+		</div>
+		<div class="field-display">
+			<span>Subject</span>
+			Email quota exceeded
+		</div>
+		<div class="field-display">
+			<span>Location</span>
+			Bur Dubai Office
+		</div>
+		<div class="field-display">
+			<span>Email</span>
+			nospam@nospam.org
+		</div>
+		<div>
+			The email quota has been exceeded for this user
+		</div>
+	</div>
+</main>
+
+<footer>
+</footer>
+
+</body>
+</html>
